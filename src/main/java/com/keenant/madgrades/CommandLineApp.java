@@ -28,7 +28,7 @@ public class CommandLineApp {
   public static class Args {
 
     @Parameter(names = {"-r", "-reports"},
-        description = "Path to the local registrar-reports repository", required = true)
+        description = "Path to the local registrar-reports repository (madgrades-data)", required = true)
     private String registrarReports;
 
     @Parameter(names = {"-t", "-terms"},
@@ -39,7 +39,7 @@ public class CommandLineApp {
         description = "Comma-separated list of term codes to exclude (ex. -e 1082)")
     private String excludeTerms;
 
-    @Parameter(names = {"-out", "-o"},
+    @Parameter(names = {"-o", "-out"},
         description = "Output directory path for exported files (ex. -o ../data)")
     private String outputPath = "./";
 

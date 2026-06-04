@@ -36,9 +36,6 @@ Build it yourself with `mvn clean install` or grab a release from the releases p
 ```
 Usage: <main class> [options]
   Options:
-    -d, -download
-      Download the PDF reports instead of extracting data
-      Default: false
     -e, -exclude
       Comma-separated list of term codes to exclude (ex. -e 1082)
     -f, -format
@@ -48,9 +45,11 @@ Usage: <main class> [options]
     -l, -list
       Output list of terms to extract
       Default: false
-    -out, -o
+    -o, -out
       Output directory path for exported files (ex. -o ../data)
       Default: ./
+  * -r, -reports
+      Path to the local registrar-reports repository (madgrades-data)
     -t, -terms
       Comma-separated list of term codes to run (ex. -t 1082,1072)
 ```
